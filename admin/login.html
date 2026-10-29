@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Admin login</title>
+<link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/admin/assets/admin.css">
+</head>
+<body>
+<div class="login">
+  <form id="loginForm" autocomplete="on">
+    <h1>Admin login</h1>
+    <p class="muted small">Mohit Marketing website</p>
+    <div class="error" id="err" role="alert" hidden></div>
+    <div class="field"><label for="username">Username</label><input id="username" name="username" autocomplete="username" required maxlength="60" autofocus></div>
+    <div class="field"><label for="password">Password</label><input id="password" name="password" type="password" autocomplete="current-password" required maxlength="200"></div>
+    <button class="btn" type="submit" id="btn">Log in</button>
+    <p class="small"><a href="/">← Back to website</a></p>
+  </form>
+</div>
+<script src="/admin/assets/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Database (contains enquiries, customer phone numbers and the admin password hash)
+data/*
+!data/.gitkeep
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+
+# Uploaded images (back these up separately)
+uploads/*
+!uploads/.gitkeep
+
+node_modules/
+npm-debug.log*
+.DS_Store
+Thumbs.db

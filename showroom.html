@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mohit Marketing – Jaquar Dealer, Bangalore</title>
+<style>
+:root{--ocean:#0A5C8C;--deep:#06385A;--aqua:#18B6D6;--mist:#EAF6FB;--bg:#fff;--card:#fff;--text:#0F2A3A;--mute:#5F7686;--line:#D5E6EF;--red:#D62F3A;--wa:#1FA855;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ocean:#2FA0D8;--deep:#04243A;--aqua:#3CD0EA;--mist:#0C2434;--bg:#08161F;--card:#0E2230;--text:#E6F3F9;--mute:#8FAABA;--line:#1D3B4D;color-scheme:dark}}
+:root[data-theme="dark"]{--ocean:#2FA0D8;--deep:#04243A;--aqua:#3CD0EA;--mist:#0C2434;--bg:#08161F;--card:#0E2230;--text:#E6F3F9;--mute:#8FAABA;--line:#1D3B4D;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(70px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 "Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.top{background:var(--deep);color:#fff;font-size:14px;padding:7px 0}
+.top .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;gap:20px;height:64px}
+.logo{font-weight:800;font-size:20px;color:var(--ocean);letter-spacing:.2px}
+nav{display:flex;gap:18px;margin-left:auto;font-weight:600;font-size:15px;overflow-x:auto}
+nav a:hover{color:var(--ocean)}
+.hero{background:linear-gradient(135deg,var(--deep),var(--ocean) 70%,var(--aqua));color:#fff;padding:64px 0 72px}
+.hero h1{font-size:clamp(30px,5vw,52px);line-height:1.1;margin:0 0 14px;max-width:700px}
+.hero p{max-width:540px;margin:0 0 26px;opacity:.92;font-size:18px}
+.btn{display:inline-block;border:0;border-radius:8px;padding:12px 22px;font:700 15px inherit;cursor:pointer}
+.btn.pri{background:#fff;color:var(--deep)}
+.btn.ghost{border:2px solid #fff;color:#fff;margin-left:8px}
+.btn.wa{background:var(--wa);color:#fff}
+.btn:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--aqua);outline-offset:2px}
+section{padding:48px 0}
+section.alt{background:var(--mist)}
+h2{font-size:28px;margin:0 0 6px;color:var(--ocean)}
+.sub{color:var(--mute);margin:0 0 24px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:999px;padding:8px 16px;font:600 14px inherit;cursor:pointer}
+.chip.on,.chip:hover{background:var(--ocean);border-color:var(--ocean);color:#fff}
+.tools{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 20px}
+.tools input,.tools select{flex:1 1 200px;border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:8px;padding:11px 14px;font:inherit}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.ph{height:150px;background:linear-gradient(160deg,var(--mist),var(--line));display:flex;align-items:center;justify-content:center;color:var(--mute);font-size:13px;position:relative}
+.badge{position:absolute;top:10px;right:10px;background:var(--red);color:#fff;font-weight:700;font-size:12px;padding:3px 8px;border-radius:6px}
+.cb{padding:14px;display:flex;flex-direction:column;gap:4px;flex:1}
+.meta{font-size:12px;color:var(--mute);font-weight:600}
+.nm{font-weight:700}
+.mrp{color:var(--mute);text-decoration:line-through;font-size:14px}
+.nrp{font-size:22px;font-weight:800;color:var(--text)}
+.save{color:var(--wa);font-size:13px;font-weight:600}
+.acts{display:flex;gap:8px;margin-top:auto;padding-top:10px}
+.acts .btn{padding:9px 10px;font-size:13px;flex:1;text-align:center}
+.btn.out{border:1.5px solid var(--ocean);color:var(--ocean);background:transparent}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.why div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px}
+.why b{color:var(--ocean)}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px}
+form{display:grid;gap:10px}
+form input,form textarea{border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:8px;padding:11px 14px;font:inherit;width:100%}
+footer{background:var(--deep);color:#cfe6f2;padding:28px 0 90px;font-size:14px}
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;background:var(--wa);color:#fff;font-weight:700;border-radius:999px;padding:13px 20px;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.enq{position:fixed;left:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;background:var(--ocean);color:#fff;font-weight:700;border:0;border-radius:999px;padding:13px 18px;cursor:pointer;display:none}
+.note{font-size:12px;color:var(--mute);margin-top:14px}
+.stats{background:var(--deep);color:#fff}.stats .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;padding-top:22px;padding-bottom:22px;text-align:center}.stats b{display:block;font-size:22px;color:var(--aqua)}.stats span{font-size:14px;opacity:.85}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px}.tile{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px 10px;text-align:center;font-weight:700;color:var(--ocean);cursor:pointer;font-size:15px}.tile:hover{background:var(--ocean);color:#fff}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}.steps div{border-left:4px solid var(--aqua);padding:4px 0 4px 14px}
+.rev{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px}.rev small{color:var(--mute)}
+details{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin-bottom:10px}summary{font-weight:700;cursor:pointer;color:var(--ocean)}details p{margin:10px 0 0}
+@media(max-width:640px){nav{display:none}.hero{padding:44px 0 52px}.btn.ghost{margin:10px 0 0}}
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap"><span>📞 +91 00000 00000 · WhatsApp</span><span>Open 10 AM – 8 PM</span></div></div>
+<header><div class="wrap"><a class="logo" href="#home">MOHIT MARKETING</a>
+<nav><a href="#shop">Shop</a><a href="#brands">Brands</a><a href="#offers">Offers</a><a href="#about">About</a><a href="#builders">Builders</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav></div></header>
+
+<main>
+<div class="hero" id="home"><div class="wrap">
+<h1>Premium bathroom fittings at the best prices</h1>
+<p>Authorised Jaquar dealer in Bangalore. See the MRP, our price and your saving before you visit.</p>
+<a class="btn pri" href="#shop">Shop now</a><a class="btn ghost" href="#contact">Visit showroom</a>
+</div></div>
+<div class="stats"><div class="wrap"><div><b>11</b><span>Top brands</span></div><div><b>Genuine</b><span>Brand warranty</span></div><div><b>Bangalore</b><span>Home delivery</span></div><div><b>10 AM – 8 PM</b><span>Showroom open daily</span></div></div></div>
+<section><div class="wrap"><h2>Shop by category</h2><p class="sub">Everything for a bathroom and kitchen, from one showroom.</p>
+<div class="tiles" id="tiles"></div></div></section>
+
+<section id="shop"><div class="wrap">
+<h2>Shop</h2><p class="sub">Search by name or model code, then filter by brand and category.</p>
+<div class="tools"><input id="q" type="search" placeholder="Search products or model code" aria-label="Search products">
+<select id="sort" aria-label="Sort"><option value="off">Biggest discount</option><option value="lo">Price: low to high</option><option value="hi">Price: high to low</option></select></div>
+<div class="chips" id="cats" style="margin-bottom:12px"></div>
+<div class="chips" id="brandChips" style="margin-bottom:22px"></div>
+<div class="grid" id="grid"></div>
+<p class="note">Prices shown are samples for illustration. Real MRP and NRP will come from your price list.</p>
+</div></section>
+
+<section class="alt" id="offers"><div class="wrap">
+<h2>Offers & deals</h2><p class="sub">Biggest savings first.</p>
+<div class="grid" id="offerGrid"></div>
+</div></section>
+
+<section id="brands"><div class="wrap">
+<h2>Our brands</h2><p class="sub">Jaquar first, plus ten more names under one roof.</p>
+<div class="chips" id="brandList"></div>
+</div></section>
+
+<section class="alt"><div class="wrap">
+<h2>Why choose us</h2><p class="sub"> </p>
+<div class="why"><div><b>Genuine products</b><br>Authorised dealer stock with brand warranty.</div><div><b>Best prices</b><br>MRP and our price shown side by side.</div><div><b>Expert advice</b><br>Showroom staff help you pick the right fit.</div><div><b>Delivery in Bangalore</b><br>Safe delivery to your home or site.</div></div>
+</div></section>
+
+<section id="about"><div class="wrap two">
+<div><h2>About Mohit Marketing</h2><p>We are an authorised Jaquar dealer in Bangalore, supplying faucets, showers, sanitaryware, heaters and kitchen fittings for homes, apartments and projects.</p><p>Our team helps you choose the right products for your budget and your space, and you can see the real MRP and our price before you step in.</p><p class="note">Add your story, years in business and showroom photos here.</p></div>
+<div class="ph" style="height:220px;border-radius:12px">Showroom photo</div>
+</div></section>
+<section class="alt"><div class="wrap"><h2>How to buy</h2><p class="sub">Four simple steps.</p>
+<div class="steps"><div><b>1. Browse</b><br>Search the catalogue by brand, category or model code.</div><div><b>2. Compare</b><br>See the MRP, our price and your saving.</div><div><b>3. Enquire</b><br>Tap WhatsApp or call. Add several items to one list.</div><div><b>4. Buy</b><br>Visit the showroom or get it delivered.</div></div></div></section>
+<section><div class="wrap"><h2>What customers say</h2><p class="sub">Sample reviews. Real Google reviews will replace these.</p>
+<div class="why"><div class="rev">★★★★★<br>Clear prices and quick help on WhatsApp. Picked everything for my bathroom in one visit.<br><small>Sample customer, Indiranagar</small></div><div class="rev">★★★★★<br>Good range of Jaquar and other brands. Delivery was on time.<br><small>Sample customer, Whitefield</small></div><div class="rev">★★★★★<br>Got a fair bulk quote for our apartment project.<br><small>Sample builder, Bangalore</small></div></div></div></section>
+<section class="alt" id="faq"><div class="wrap"><h2>Questions</h2><p class="sub">Quick answers.</p>
+<details><summary>Are the products genuine?</summary><p>Yes. We are an authorised dealer and every product comes with the brand warranty.</p></details>
+<details><summary>Can I buy online?</summary><p>Right now you enquire on WhatsApp or call, then pay at the showroom or on delivery. Online payment can be added later.</p></details>
+<details><summary>Do you deliver across Bangalore?</summary><p>Yes. Share your area on WhatsApp and we will confirm delivery time and charges.</p></details>
+<details><summary>Do you give bulk or project pricing?</summary><p>Yes. Use the builders' form above and we will send a quote.</p></details>
+<details><summary>Is the price on the website final?</summary><p>Prices are our current selling price and can change. Confirm on WhatsApp before you buy.</p></details>
+</div></section>
+
+<section class="alt" id="builders"><div class="wrap two">
+<div><h2>For builders & projects</h2><p>Planning a flat, villa or hotel project? Share your requirement and get bulk pricing and delivery planning.</p></div>
+<form onsubmit="return quote(event)"><input name="n" placeholder="Your name" required><input name="p" placeholder="Phone number" required><textarea name="r" rows="3" placeholder="Project details and quantity"></textarea><button class="btn wa" type="submit">Request quote on WhatsApp</button></form>
+</div></section>
+
+<section id="contact"><div class="wrap two">
+<div><h2>Contact us</h2><p>Your shop address, Bangalore<br>📞 +91 00000 00000<br>Open 10 AM – 8 PM</p><p class="note">Google Map will be added here.</p></div>
+<form onsubmit="return enquire(event)"><h2>Send an enquiry</h2><input name="n" placeholder="Your name" required><input name="p" placeholder="Phone number" required><textarea name="r" rows="3" placeholder="What are you looking for?"></textarea><button class="btn wa" type="submit">Send on WhatsApp</button><p class="note">Follow us: Instagram · Facebook · YouTube</p></form>
+</div></section>
+</main>
+
+<footer><div class="wrap">© Mohit Marketing · Authorised Jaquar dealer, Bangalore</div></footer>
+<button class="enq" id="enq" onclick="sendList()"></button>
+<a class="fab" id="fab" href="#" target="_blank" rel="noopener">WhatsApp us</a>
+
+<script>
+var PHONE="910000000000";
+var BR=["Jaquar","Essco","Ess Ess","Bath Sense","Parryware","Johnson Pedder","Viking","Kohinoor","Bathwin","Jayanti","Vaishno"];
+var CT=["All","Faucets","Showers","Basins","WCs","Accessories","Heaters","Kitchen"];
+var P=[
+["Single Lever Basin Mixer","Jaquar","ALI-CHR-85011B","Faucets",4500,3150],
+["Round Rain Shower 200mm","Jaquar","SHS-CHR-1617","Showers",8200,6150],
+["Wall-hung WC","Jaquar","ALS-WHT-85951","WCs",21000,16800],
+["Towel Rail 600mm","Jaquar","ACN-CHR-1115","Accessories",2400,1800],
+["Counter Top Basin","Parryware","C0451","Basins",6200,4650],
+["Pillar Cock","Essco","ESS-PC-101","Faucets",1800,1260],
+["Overhead Shower Set","Bath Sense","BS-OS-22","Showers",5400,3780],
+["Wall Mixer with Diverter","Jaquar","FLR-CHR-5473","Faucets",7600,5700],
+["Health Faucet with Hose","Jaquar","HFK-CHR-1163","Accessories",1900,1330],
+["Hand Shower 3-Flow","Jaquar","HSH-CHR-1739","Showers",2800,2100],
+["Single Piece Closet","Parryware","C8068","WCs",14500,10900],
+["Wall Hung Basin","Jaquar","ALS-WHT-85101","Basins",5200,3900],
+["Instant Water Heater 3L","Jaquar","WHT-INS-03","Heaters",7800,5850],
+["Storage Water Heater 15L","Viking","VK-SWH-15","Heaters",9200,6440],
+["Kitchen Sink Mixer","Jaquar","KTM-CHR-4107","Kitchen",6800,4760],
+["Stainless Steel Sink","Kohinoor","KH-SS-3218","Kitchen",8400,5880],
+["Soap Dispenser","Essco","ES-SD-12","Accessories",1500,1050],
+["Bathroom Shelf Glass","Bathwin","BW-SH-60","Accessories",1700,1190],
+["Pedestal Basin","Johnson Pedder","JP-PB-501","Basins",4800,3360],
+["Two-Piece Closet","Ess Ess","EE-TP-210","WCs",9800,6860],
+["Angle Cock","Jayanti","JY-AC-15","Faucets",650,455],
+["Overhead Shower 12 inch","Vaishno","VS-OH-12","Showers",3900,2730],
+["Bib Cock Long Body","Bath Sense","BS-BC-LB","Faucets",1100,770]
+];
+var cat="All",br="All",sel=[];
+function pct(p){return Math.round((p[4]-p[5])/p[4]*100)}
+function inr(n){return "₹"+n.toLocaleString("en-IN")}
+function wa(t){return "https://wa.me/"+PHONE+"?text="+encodeURIComponent(t)}
+function card(p,i){return '<div class="card"><div class="ph">Product photo<span class="badge">'+pct(p)+'% OFF</span></div><div class="cb"><span class="meta">'+p[1].toUpperCase()+' · '+p[2]+'</span><span class="nm">'+p[0]+'</span><span class="mrp">'+inr(p[4])+'</span><span class="nrp">'+inr(p[5])+'</span><span class="save">You save '+inr(p[4]-p[5])+'</span><div class="acts"><a class="btn wa" target="_blank" rel="noopener" href="'+wa("Hi, I am interested in "+p[0]+" ("+p[1]+", "+p[2]+") at "+inr(p[5]))+'">WhatsApp</a><button class="btn out" onclick="add('+P.indexOf(p)+')">Add to list</button></div></div></div>'}
+function chips(el,list,cur,fn){document.getElementById(el).innerHTML=list.map(function(c){return '<button class="chip'+(c===cur?' on':'')+'" onclick="'+fn+'(\''+c+'\')">'+c+'</button>'}).join("")}
+function render(){
+ var q=document.getElementById("q").value.toLowerCase(),s=document.getElementById("sort").value;
+ var r=P.filter(function(p){return (cat==="All"||p[3]===cat)&&(br==="All"||p[1]===br)&&(p[0]+p[2]+p[1]).toLowerCase().indexOf(q)>-1});
+ r.sort(function(a,b){return s==="lo"?a[5]-b[5]:s==="hi"?b[5]-a[5]:pct(b)-pct(a)});
+ document.getElementById("grid").innerHTML=r.length?r.map(card).join(""):"<p>No products match. Try another brand or search.</p>";
+ chips("cats",CT,cat,"setCat");chips("brandChips",["All"].concat(BR),br,"setBr");
+}
+function setCat(c){cat=c;render()}
+function setBr(b){br=b;render();document.getElementById("shop").scrollIntoView()}
+function add(i){if(sel.indexOf(i)<0)sel.push(i);var b=document.getElementById("enq");b.style.display="block";b.textContent="Send enquiry list ("+sel.length+")"}
+function sendList(){var t="Hi, I would like a quote for:\n"+sel.map(function(i){return "• "+P[i][0]+" ("+P[i][1]+", "+P[i][2]+") "+inr(P[i][5])}).join("\n");window.open(wa(t),"_blank")}
+function enquire(e){e.preventDefault();var f=e.target;window.open(wa("Enquiry\nName: "+f.n.value+"\nPhone: "+f.p.value+"\n"+f.r.value),"_blank");return false}
+function quote(e){e.preventDefault();var f=e.target;window.open(wa("Project quote request\nName: "+f.n.value+"\nPhone: "+f.p.value+"\n"+f.r.value),"_blank");return false}
+document.getElementById("q").oninput=render;document.getElementById("sort").onchange=render;
+document.getElementById("fab").href=wa("Hi, I have an enquiry about your products.");
+document.getElementById("offerGrid").innerHTML=P.slice().sort(function(a,b){return pct(b)-pct(a)}).slice(0,4).map(card).join("");
+document.getElementById("brandList").innerHTML=BR.map(function(b){return '<button class="chip" onclick="setBr(\''+b+'\')">'+b+'</button>'}).join("");
+document.getElementById("tiles").innerHTML=CT.slice(1).map(function(c){return '<div class="tile" onclick="setCat(\''+c+'\');document.getElementById(\'shop\').scrollIntoView()">'+c+'</div>'}).join("");
+render();
+</script>
+</body>
+</html>

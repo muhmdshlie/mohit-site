@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{META_TITLE}}</title>
+<meta name="description" content="{{META_DESC}}">
+<link rel="canonical" href="{{CANONICAL}}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{META_TITLE}}">
+<meta property="og:description" content="{{META_DESC}}">
+<meta property="og:url" content="{{CANONICAL}}">
+<meta property="og:site_name" content="{{SHOP_NAME}}">
+<link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/site.css">
+<link rel="stylesheet" href="/theme.css">
+</head>
+<body>
+<div class="top"><div class="wrap"><span>📞 <a id="topPhone" href="#"></a> · WhatsApp</span><span data-s="hours"></span></div></div>
+<header><div class="wrap"><a class="logo" id="logo" href="#home">{{SHOP_NAME}}</a>
+<nav><a href="#shop">Shop</a><a href="#brands">Brands</a><a href="#offers">Offers</a><a href="#about">About</a><a href="#builders">Builders</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav></div></header>
+
+<main>
+<div class="hero" id="home">
+<picture class="hero-bg">
+<source type="image/avif" media="(max-width: 640px)" srcset="/img/hero/hero-m-480.avif 480w, /img/hero/hero-m-640.avif 640w" sizes="100vw">
+<source type="image/webp" media="(max-width: 640px)" srcset="/img/hero/hero-m-480.webp 480w, /img/hero/hero-m-640.webp 640w" sizes="100vw">
+<source type="image/avif" srcset="/img/hero/hero-960.avif 960w, /img/hero/hero-1280.avif 1280w, /img/hero/hero-1536.avif 1536w" sizes="100vw">
+<source type="image/webp" srcset="/img/hero/hero-960.webp 960w, /img/hero/hero-1280.webp 1280w, /img/hero/hero-1536.webp 1536w" sizes="100vw">
+<img src="/img/hero/hero-1280.jpg" alt="Modern bathroom with a wall-hung vanity, table-top basin, chrome basin mixer and a walk-in rain shower" width="1280" height="720" fetchpriority="high" decoding="async">
+</picture>
+<div class="wrap">
+<h1 data-s="hero_title"></h1>
+<p data-s="hero_text"></p>
+<a class="btn pri" href="#shop" data-s="hero_btn1"></a><a class="btn ghost" href="#contact" data-s="hero_btn2"></a>
+</div></div>
+<div class="stats"><div class="wrap" id="stats"></div></div>
+<section><div class="wrap"><h2 data-s="categories_title"></h2><p class="sub" data-s="categories_sub"></p>
+<div class="tiles" id="tiles"></div></div></section>
+
+<section id="shop"><div class="wrap">
+<h2 data-s="shop_title"></h2><p class="sub" data-s="shop_sub"></p>
+<div class="tools"><input id="q" type="search" placeholder="Search products or model code" aria-label="Search products" maxlength="100">
+<select id="sort" aria-label="Sort"><option value="off">Biggest discount</option><option value="lo">Price: low to high</option><option value="hi">Price: high to low</option></select></div>
+<div class="chips mb12" id="cats"></div>
+<div class="chips mb22" id="brandChips"></div>
+<p class="count" id="count" aria-live="polite"></p>
+<div class="grid" id="grid"></div>
+<button class="btn out loadmore" id="more" type="button" hidden>Show more products</button>
+<p class="note" data-s="price_note"></p>
+</div></section>
+
+<section class="alt" id="offers"><div class="wrap">
+<h2 data-s="offers_title"></h2><p class="sub" data-s="offers_sub"></p>
+<div class="banners" id="banners" hidden></div>
+<div class="grid" id="offerGrid"></div>
+</div></section>
+
+<section id="brands"><div class="wrap">
+<h2 data-s="brands_title"></h2><p class="sub" data-s="brands_sub"></p>
+<div class="chips" id="brandList"></div>
+</div></section>
+
+<section class="alt"><div class="wrap">
+<h2 data-s="why_title"></h2><p class="sub" data-s="why_sub"> </p>
+<div class="why" id="why"></div>
+</div></section>
+
+<section id="about"><div class="wrap two">
+<div><h2 data-s="about_title"></h2><div id="aboutText"></div></div>
+<div id="showroom"><div class="ph showroom">Showroom photo</div></div>
+</div></section>
+<section class="alt"><div class="wrap"><h2 data-s="steps_title"></h2><p class="sub" data-s="steps_sub"></p>
+<div class="steps" id="steps"></div></div></section>
+<section id="reviews"><div class="wrap"><h2 data-s="reviews_title"></h2><p class="sub" data-s="reviews_sub"></p>
+<div class="why" id="reviewList"></div></div></section>
+<section class="alt" id="faq"><div class="wrap"><h2 data-s="faq_title"></h2><p class="sub" data-s="faq_sub"></p>
+<div id="faqList"></div>
+</div></section>
+
+<section class="alt" id="builders"><div class="wrap two">
+<div><h2 data-s="builders_title"></h2><p data-s="builders_text"></p></div>
+<form id="quoteForm" data-type="quote"><input name="name" placeholder="Your name" required maxlength="80" autocomplete="name"><input name="phone" type="tel" placeholder="Phone number" required maxlength="20" pattern="[0-9+\(\)\- ]{7,20}" title="Enter a valid phone number" autocomplete="tel"><textarea name="message" rows="3" placeholder="Project details and quantity" maxlength="2000"></textarea><div class="hp" aria-hidden="true"><input name="website" tabindex="-1" autocomplete="off"></div><button class="btn wa" type="submit">Request quote on WhatsApp</button></form>
+</div></section>
+
+<section id="contact"><div class="wrap two">
+<div><h2 data-s="contact_title"></h2><p><span class="addr" data-s="address"></span><br>📞 <a id="contactPhone" href="#"></a><span id="phone2Line" hidden> · ☎️ <a id="phone2" href="#"></a></span><br><span data-s="hours"></span><span id="emailLine" hidden><br>✉️ <a id="email" href="#"></a></span></p>
+<p id="mapWrap" hidden><a class="btn out mapbtn" id="mapLink" href="#" target="_blank" rel="noopener">Open in Google Maps</a></p></div>
+<form id="enquiryForm" data-type="enquiry"><h2 data-s="enquiry_title"></h2><input name="name" placeholder="Your name" required maxlength="80" autocomplete="name"><input name="phone" type="tel" placeholder="Phone number" required maxlength="20" pattern="[0-9+\(\)\- ]{7,20}" title="Enter a valid phone number" autocomplete="tel"><textarea name="message" rows="3" placeholder="What are you looking for?" maxlength="2000"></textarea><div class="hp" aria-hidden="true"><input name="website" tabindex="-1" autocomplete="off"></div><button class="btn wa" type="submit">Send on WhatsApp</button><p class="note social" id="social" hidden></p></form>
+</div></section>
+</main>
+
+<footer><div class="wrap" data-s="footer_text"></div></footer>
+<div class="enqbar" id="enqbar" hidden><button class="enq" id="enq" type="button"></button><button class="clr" id="enqClear" type="button" aria-label="Clear enquiry list">×</button></div>
+<a class="fab" id="fab" href="#" target="_blank" rel="noopener">WhatsApp us</a>
+
+<script src="/js/common.js"></script>
+<script src="/js/home.js"></script>
+</body>
+</html>

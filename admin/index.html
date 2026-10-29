@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Admin – Mohit Marketing</title>
+<link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/admin/assets/admin.css">
+</head>
+<body>
+<div class="topbar"><button type="button" id="menuBtn" aria-label="Open menu">☰</button><b id="topTitle">Admin</b></div>
+<div class="shell">
+  <nav class="side" id="side" aria-label="Admin menu">
+    <div class="brand">Mohit Marketing<br><span class="small muted" id="who"></span></div>
+    <a href="#/dashboard" data-page="dashboard">Dashboard</a>
+    <a href="#/enquiries" data-page="enquiries">Enquiries <span class="pill" id="newCount" hidden></span></a>
+    <a href="#/products" data-page="products">Products</a>
+    <a href="#/brands" data-page="brands">Brands</a>
+    <a href="#/categories" data-page="categories">Categories</a>
+    <a href="#/offers" data-page="offers">Offers &amp; banners</a>
+    <a href="#/reviews" data-page="reviews">Reviews</a>
+    <a href="#/faqs" data-page="faqs">FAQs</a>
+    <a href="#/settings" data-page="settings">Site settings</a>
+    <hr>
+    <a href="#/account" data-page="account">Change password</a>
+    <a href="/" target="_blank" rel="noopener">View website ↗</a>
+    <a href="#" id="logout">Log out</a>
+  </nav>
+  <main class="main" id="main" tabindex="-1"></main>
+</div>
+<dialog id="dlg"></dialog>
+<script src="/admin/app.js"></script>
+</body>
+</html>
